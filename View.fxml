@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <TextField fx:id="display" editable="false" prefWidth="200" />
+
+    <GridPane hgap="5" vgap="5">
+        <Button text="7" onAction="#numberPressed" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <Button text="8" onAction="#numberPressed" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+        <Button text="9" onAction="#numberPressed" GridPane.rowIndex="0" GridPane.columnIndex="2" />
+        <Button text="/" onAction="#operatorPressed" GridPane.rowIndex="0" GridPane.columnIndex="3" />
+
+        <Button text="4" onAction="#numberPressed" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <Button text="5" onAction="#numberPressed" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+        <Button text="6" onAction="#numberPressed" GridPane.rowIndex="1" GridPane.columnIndex="2" />
+        <Button text="*" onAction="#operatorPressed" GridPane.rowIndex="1" GridPane.columnIndex="3" />
+
+        <Button text="1" onAction="#numberPressed" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <Button text="2" onAction="#numberPressed" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+        <Button text="3" onAction="#numberPressed" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+        <Button text="-" onAction="#operatorPressed" GridPane.rowIndex="2" GridPane.columnIndex="3" />
+
+        <Button text="0" onAction="#numberPressed" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <Button text="." onAction="#decimalPressed" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+        <Button text="=" onAction="#equalsPressed" GridPane.rowIndex="3" GridPane.columnIndex="2" />
+        <Button text="+" onAction="#operatorPressed" GridPane.rowIndex="3" GridPane.columnIndex="3" />
+
+        <Button text="C" onAction="#clearPressed" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="4" />
+    </GridPane>
+</VBox>
