@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller">
    <children>
       <ImageView fitHeight="102.0" fitWidth="103.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,14 +21,14 @@
             <Font name="AKbalthom Naga Bold" size="15.0" />
          </font>
       </Label>
-      <Button layoutX="250.0" layoutY="252.0" mnemonicParsing="false" text="Calculation">
+      <Button id="button_calculate" fx:id="Button_Calculate" layoutX="195.0" layoutY="260.0" mnemonicParsing="false" onAction="#on_calculate" text="Calculation">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <TextField id="textfield_num1" layoutX="65.0" layoutY="167.0" prefHeight="36.0" prefWidth="149.0" />
-      <TextField layoutX="275.0" layoutY="167.0" prefHeight="36.0" prefWidth="149.0" />
-      <Label layoutX="231.0" layoutY="170.0" text="+">
+      <TextField fx:id="textfield_num1" layoutX="65.0" layoutY="167.0" prefHeight="36.0" prefWidth="149.0" />
+      <TextField fx:id="textfield_num2" layoutX="275.0" layoutY="167.0" prefHeight="36.0" prefWidth="149.0" />
+      <Label layoutX="238.0" layoutY="170.0" text="+">
          <font>
             <Font size="20.0" />
          </font>
@@ -38,7 +38,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="473.0" layoutY="170.0" text="Result">
+      <Label fx:id="Result" layoutX="473.0" layoutY="170.0" text="Result">
          <font>
             <Font size="20.0" />
          </font>
