@@ -27,7 +27,7 @@ public class Controller {
         Double result = db_num1 + db_num2;
         System.out.println(result);
         Result.setText(String.valueOf(result));
-        
+
 
     }
 
