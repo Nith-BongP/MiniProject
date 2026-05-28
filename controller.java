@@ -26,6 +26,9 @@ public class Controller {
         Double db_num2 = Double.parseDouble(num2);
         Double result = db_num1 + db_num2;
         System.out.println(result);
+        Result.setText(String.valueOf(result));
+        
+
     }
 
 }
