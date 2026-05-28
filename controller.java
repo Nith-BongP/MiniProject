@@ -20,7 +20,10 @@ public class Controller {
 
     @FXML
     void on_calculate(ActionEvent event) {
-
+        String num1 = textfield_num1.getText();
+        String num2 = textfield_num2.getText();
+        System.out.println(num1);
+        System.out.println(num2);
     }
 
 }
