@@ -17,6 +17,7 @@ public class Main extends Application {
         Scene scene = new Scene(loader.load());
         stage.setScene(scene);
         stage.setTitle("Simple Calculator");
+        stage.getIcons().add(new javafx.scene.image.Image(getClass().getResourceAsStream("Logo-GTRSC-png.png")));
         stage.show();
     }
 }
